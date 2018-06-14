@@ -44,7 +44,7 @@ class App extends Component {
   }
 
   render() {
-    const { movies } = this.state // Add "this.state" to all "movies"
+    const { movies } = this.state // Add "this.state" to all "movies" test
     return (
       <div className={movies ? "App" : "App--loading"}>
         {movies ? this._renderMovies() : <Loader />}
